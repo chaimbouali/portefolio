@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;700&display=swap');
+ :root{
+    --bodyColor:#02343a;
+    --mainColor:#fff;
+    --headingColor:#eef3db;
+    --brandColor: #e0f780;
+    --familyBase:'Bai Jamjuree', sans-serif;
+    --SizeText:14px;
+
+
+ }
+body {
+     background-color: var(--bodyColor);
+     color:var(--mainColor);
+     font-family: var(--familyBase);
+     
+
+}
+h1,h2,h3,h4{
+    color:var(--headingColor);
+}
+img{
+    width:100%;
+}
+a{
+    color:var(--mainColor); 
+    text-decoration: none;
+}
+a:hover{
+    color:var(--mainColor); 
+    
+}
+/* BTN */
+.btn-cv{
+    background-color: var(--brandColor);
+    color:#000;
+    border:1px solid var(--mainColor);
+    font-weight: 700;
+}
+/* BTN */
+
+
+/* Style Navbar */
+.navbar .nav-link {
+
+    font-weight:700;
+    text-transform:uppercase;
+    color:#fff;
+    font-size: var(--SizeText);
+}
+.navbar {
+    background-color: #033f47;
+}
+.navbar .nav-link:hover {
+    color: var(--brandColor);
+}
+
+.navbar .nav-link.active {
+    color: var(--brandColor);
+}
+.navbar  .nav-link a:hover { 
+    color:#36c7ef;
+}
+.navbar-brand img {
+    border: 8px solid #fff;
+}
+/* Style Navbar */
+
+/* Style main contenu */
+.bloc-section{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255,255,255, 0.1);
+}
+.titre-bloc{
+font-size:49px;
+}
+.soustitre-bloc{
+    color:var(--brandColor);
+}
+.telephone{
+    font-weight: 700;
+    position: relative;
+}
+.telephone::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--brandColor);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+.telephone:hover::after {
+    width: 100%;
+}
+.bg-service{
+    background-color: #033f47;
+    min-height: 300px;
+}
+.bg-services{
+    background-color: #033f47;
+    min-height: 147px;
+}
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 var(--brandColor);
+}
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: var(--brandColor);
+    color: #033f47;
+}
+#contact .form-control {
+    background-color: #033f47;
+    border-color: #033f47;
+    color: #02343a;
+}
+
+#contact .form-control:focus {
+    border-color: var(--brandColor);
+    box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+    color: #02343a;
+}
+
+#contact input.form-control {
+    height: 44px;
+}
+
+.desi{
+    padding-left: 234px;
+}
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #033f47;
+    border-radius: 100px;
+    font-size: 24px;
+}
+@media  (min-width:992px) {
+    .navbar{
+        width:240px;
+        min-height:100vh;
+        background-image: linear-gradient(rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8)), url(../images/sidebar-img.jpg);;
+    
+    }
+    .contenu-wrapper{
+        padding-left:240px ;
+    }
+}
